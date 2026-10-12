@@ -1,0 +1,106 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e5e7eb;
+    color: #222;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.resume {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 45px;
+    box-shadow: 0 5px 20px #0003;
+}
+
+.resume section {
+    margin-bottom: 25px;
+}
+
+.resume h1 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.resume h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 7px;
+    margin-bottom: 12px;
+}
+
+.resume h3 {
+    margin-bottom: 8px;
+}
+
+.resume p {
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.resume ul {
+    padding-left: 25px;
+}
+
+.resume li {
+    margin: 7px 0;
+}
+
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.buttons a,
+.buttons button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.buttons a:hover,
+.buttons button:hover {
+    background: #1d4ed8;
+}
+
+/* Print ke time buttons hide honge */
+@media print {
+
+    header,
+    .buttons {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        box-shadow: none;
+        width: 100%;
+        max-width: none;
+    }
+}
